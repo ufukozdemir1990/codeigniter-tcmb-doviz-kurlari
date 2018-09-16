@@ -1,2 +1,2 @@
-# codeigniter-tcmb-doviz-kurlari
+# Codeigniter TCMB Döviz Kurları
 Codeigniter TCMB Döviz Kurlarını Çekme
