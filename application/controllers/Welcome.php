@@ -24,8 +24,6 @@
             /*
             // Eğer kurları önbellekten çekmek istersek
             $kurlar = 'kurlar.json';
-            $kur = json_decode(file_get_contents($kurlar));
-
             if (file_exists($kurlar)) {
                 $cacheValid = $this->doviz->setData(json_decode(file_get_contents($kurlar), true));
             } else {
@@ -35,6 +33,7 @@
                 file_put_contents($kurlar, json_encode($this->doviz->getData()));
             }
             
+            $kur = json_decode(file_get_contents($kurlar));
             $viewData->dolar_alis           = $kur->currencies->USD->ForexBuying;
             $viewData->euro_alis            = $kur->currencies->EUR->ForexBuying;
             $viewData->dolar_satis          = $kur->currencies->USD->ForexSelling;
